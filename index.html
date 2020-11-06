@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAAc2F-GrB_wuHBgN2U28GYSuOo-sxyH5w",
+    authDomain: "multiplayercarracinggame-cb677.firebaseapp.com",
+    databaseURL: "https://multiplayercarracinggame-cb677.firebaseio.com",
+    projectId: "multiplayercarracinggame-cb677",
+    storageBucket: "multiplayercarracinggame-cb677.appspot.com",
+    messagingSenderId: "735508482041",
+    appId: "1:735508482041:web:1ecac2dda26e70ab8fdf28"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     <meta charset="utf-8">
+
     <title>Zen</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
@@ -21,6 +42,10 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/form.js"></script>
+
     <script src="sketch.js"></script>
   </body>
 </html>
